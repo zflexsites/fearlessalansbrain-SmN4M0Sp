@@ -1,0 +1,167 @@
+/* ==========================================================================
+   FOCUS TEMPLATE - CORE STYLES
+   ========================================================================== */
+
+/* --- RESET & BASE --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* --- UTILITIES --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.text-muted {
+  color: var(--text-muted-color);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: #fff; /* Toujours blanc sur l'accent pour contraste fort */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* --- UI ELEMENTS --- */
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--accent-color);
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.1s;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  padding: 10px 20px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.sticky-cta.visible {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 30px;
+}
+.sticky-cta .product-info {
+  display: flex;
+  flex-direction: column;
+}
+.sticky-cta .product-name {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.sticky-cta .product-price {
+  color: var(--accent-color);
+  font-size: 0.9em;
+}
+
+/* Footer */
+.focus-footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--card-border-color);
+  margin-top: 60px;
+  text-align: center;
+}
+.focus-footer .socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+/* --- ANIMATIONS (SCROLL REVEAL) --- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- STACY: Ensure hidden class works properly --- */
+[data-stacy-window].hidden {
+  display: none !important;
+}
