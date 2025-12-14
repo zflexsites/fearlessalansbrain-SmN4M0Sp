@@ -1,0 +1,33 @@
+<main data-page-type="product-detail" data-page-title="Produit de démonstration 1"><script class="zflex-fragment-data" type="application/json"></script><section class="py-12 md:py-20" style="background-color: var(--bg-color)"><div class="container mx-auto px-4 max-w-6xl"><nav class="text-sm mb-8" style="color: var(--text-muted-color)"><a href="/" class="hover:opacity-70 transition-opacity">Accueil</a> <span class="mx-2">/</span> <a href="/catalog" class="hover:opacity-70 transition-opacity">Catalogue</a> <span class="mx-2">/</span> <span class="font-bold opacity-100" style="color: var(--text-color)">Produit de démonstration 1</span></nav><div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20"><div class="product-gallery space-y-4"><div class="aspect-square rounded-xl overflow-hidden relative group border transition-all duration-300" style="background-color: var(--card-bg-color); border-color: var(--card-border-color)"><img src="https://placehold.co/800x600?text=Produit%20de%20d%C3%A9monstration%201" alt="Produit de démonstration 1" class="w-full h-full object-cover transition-opacity duration-300" id="main-product-image"></div></div><script>// Gallery Logic Inline (Robustness)
+                document.addEventListener('DOMContentLoaded', () => {
+                    const mainImg = document.getElementById('main-product-image');
+                    const thumbnails = document.querySelectorAll('.thumbnail-btn');
+                    
+                    thumbnails.forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const src = this.dataset.src;
+                            if(!mainImg || !src) return;
+                            
+                            // Visual Feedback
+                            thumbnails.forEach(t => {
+                                t.style.borderColor = 'var(--card-border-color)';
+                                t.style.opacity = '0.7';
+                            });
+                            this.style.borderColor = 'var(--primary-color)';
+                            this.style.opacity = '1';
+                            
+                            // Image Switch with Fade
+                            mainImg.style.opacity = '0';
+                            setTimeout(() => {
+                                mainImg.src = src;
+                                mainImg.style.opacity = '1';
+                            }, 200);
+                        });
+                    });
+                    
+                    // Highlight first thumb by default
+                    if(thumbnails.length > 0) {
+                        thumbnails[0].style.borderColor = 'var(--primary-color)';
+                        thumbnails[0].style.opacity = '1';
+                    }
+                });</script><div class="product-info flex flex-col justify-center"><span class="font-bold uppercase tracking-widest text-xs mb-2" style="color: var(--primary-color)">default</span><h1 class="text-4xl md:text-5xl font-bold font-heading mb-4" style="color: var(--text-color)">Produit de démonstration 1</h1><div class="flex items-center space-x-4 mb-6"><span class="text-3xl font-bold" style="color: var(--primary-color)">Prix non disponible</span> <span class="text-sm text-red-500 px-3 py-1 rounded-full border border-red-500/20 bg-red-500/10">Épuisé</span></div><div class="prose prose-lg mb-8 text-base leading-relaxed" style="color: var(--text-muted-color)">Fearlessalan'sBrain : Learning to think. Nous proposons des solutions algorithmiques innovantes pour transformer vos défis en opportunités. Experts en résolution de problèmes complexes pour les entreprises.</div><div class="flex flex-col sm:flex-row gap-4 pt-8 border-t" style="border-color: var(--card-border-color)"><div class="flex items-center w-32 rounded-lg border" style="border-color: var(--card-border-color); background-color: var(--card-bg-color)"><button class="w-10 h-10 hover:opacity-70 flex items-center justify-center transition-opacity" style="color: var(--text-color)" onclick="this.nextElementSibling.stepDown()">-</button> <input type="number" value="1" min="1" max="10" class="w-full h-10 text-center border-none focus:ring-0 appearance-none font-bold bg-transparent" style="color: var(--text-color)"> <button class="w-10 h-10 hover:opacity-70 flex items-center justify-center transition-opacity" style="color: var(--text-color)" onclick="this.previousElementSibling.stepUp()">+</button></div><button id="add-to-cart-btn" class="flex-1 btn btn-primary py-4 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all"><i class="fa-solid fa-cart-shopping mr-2"></i> Ajouter au panier</button></div><div class="grid grid-cols-2 gap-4 mt-8 pt-8 text-sm" style="color: var(--text-muted-color)"><div class="flex items-center"><i class="fa-solid fa-truck mr-3" style="color: var(--primary-color)"></i> Livraison Rapide</div><div class="flex items-center"><i class="fa-solid fa-shield-halved mr-3" style="color: var(--primary-color)"></i> Garantie 2 Ans</div></div></div></div></div></section></main>
