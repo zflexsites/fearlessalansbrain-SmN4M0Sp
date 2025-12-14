@@ -78,46 +78,51 @@
     .hero-split .hero-content { text-align: center; order: 2; }
     .hero-split-image { order: 1; margin-bottom: 2rem; }
     .hero-title { font-size: 2.5rem !important; }
-}</style></div><div data-zflex-section="product_reveal"><section class="reveal-section section-padding"><div class="container container-narrow"><div class="reveal-header text-center reveal-on-scroll"><span class="badge-accent">La Solution</span><h2 class="reveal-title">Enfin une réponse à vos attentes</h2><div class="reveal-description"></div></div><div class="reveal-image-wrapper reveal-on-scroll" style="transition-delay: 0.3s;"><img src="" alt="Product Reveal" class="product-hero-shot"></div></div></section><style>.container-narrow { max-width: 900px; }
-.badge-accent {
-    background: var(--accent-color);
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 99px;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 1rem;
+}</style></div><div data-zflex-section="about"></div><div data-zflex-section="painPoints"></div><div data-zflex-section="features"><section class="section-padding features-section features-cards" style="background-color: var(--bg-color-alt, rgba(0,0,0,0.02));"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16 reveal-on-scroll"><h2 class="text-3xl md:text-4xl font-bold font-heading mb-4" style="color: var(--text-color)">Pourquoi choisir Focus ?</h2><p class="text-lg opacity-80" style="color: var(--text-color)">Une conception pensée pour les audiophiles exigeants.</p></div><div class="features-grid"></div></div></section><style>/* ZIGZAG STYLES */
+.zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
 }
-.reveal-title { font-size: 2.5rem; margin-bottom: 1.5rem; }
-.reveal-description { font-size: 1.2rem; color: var(--text-muted-color); margin-bottom: 3rem; }
+.zigzag-item:nth-child(even) { flex-direction: row-reverse; }
+.zigzag-content { flex: 1; }
+.zigzag-image { flex: 1; }
+.zigzag-image img { border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.zigzag-content .feature-title { font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color); }
+.zigzag-content .feature-desc { font-size: 1.1rem; color: var(--text-color); }
 
-.reveal-image-wrapper {
-    position: relative;
-    border-radius: var(--border-radius);
+/* CARDS STYLES */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.feature-card {
+    background: var(--card-bg-color);
     padding: 2rem;
-    background: var(--input-bg-color); /* Fond léger */
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+    text-align: center;
+    transition: transform 0.3s;
 }
-.product-hero-shot {
-    margin: 0 auto;
-    max-height: 500px;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
-    transform: scale(1);
-    transition: transform 0.5s ease;
-}
-.reveal-image-wrapper:hover .product-hero-shot { transform: scale(1.02); }
+.feature-card:hover { transform: translateY(-5px); }
+.feature-image-card img { height: 150px; object-fit: contain; margin: 0 auto; margin-bottom: 1rem; }
 
-/* Glow effect derrière l'image */
-.glow-effect {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; height: 80%;
-    background: var(--accent-color);
-    opacity: 0.1;
-    filter: blur(100px);
-    z-index: -1;
-    border-radius: 50%;
-}</style></div></main>
+/* LIST STYLES */
+.max-w-3xl { max-width: 48rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.border-b { border-bottom-width: 1px; }
+.border-card-border { border-color: var(--card-border-color); }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.flex { display: flex; }
+.items-start { align-items: flex-start; }
+.gap-4 { gap: 1rem; }
+.mt-1 { margin-top: 0.25rem; }
+.font-bold { font-weight: 700; }
+.text-lg { font-size: 1.125rem; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .zigzag-item, .zigzag-item:nth-child(even) { flex-direction: column; text-align: center; gap: 2rem; }
+}</style></div><div data-zflex-section="contact"></div></main>
