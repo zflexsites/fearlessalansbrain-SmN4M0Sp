@@ -78,7 +78,33 @@
     .hero-split .hero-content { text-align: center; order: 2; }
     .hero-split-image { order: 1; margin-bottom: 2rem; }
     .hero-title { font-size: 2.5rem !important; }
-}</style></div><div data-zflex-section="product_reveal"><section class="reveal-section section-padding"><div class="container container-narrow"><div class="reveal-header text-center reveal-on-scroll"><span class="badge-accent">La Solution</span><h2 class="reveal-title"></h2><div class="reveal-description"></div></div><div class="reveal-image-wrapper reveal-on-scroll" style="transition-delay: 0.3s;"><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2F702b0ea2-ebb2-4797-83c6-a265de9a2a93%2Fmain-f3cdcff1-aa1c-4645-962e-ba1f39010b6a.jpeg?alt=media" alt="Product Reveal" class="product-hero-shot"></div></div></section><style>.container-narrow { max-width: 900px; }
+}</style></div><div data-zflex-section="pain_points"><section class="section-padding bg-contrast text-inverse"><div class="container"><div class="section-header text-center reveal-on-scroll"><h2 class="section-title text-white">Pourquoi continuer à galérer ?</h2><p class="section-subtitle text-white-muted"></p></div><div class="pain-grid"><div class="pain-item reveal-on-scroll" style="transition-delay: 0s;"><div class="pain-icon-wrapper"><i class="fa-solid fa-snowflake"></i></div><p class="pain-text">Des processus d&#39;affaires gelés comme un matin d&#39;hiver, manquant de la chaleur de l&#39;innovation.</p></div><div class="pain-item reveal-on-scroll" style="transition-delay: 0.1s;"><div class="pain-icon-wrapper"><i class="fa-solid fa-sleigh"></i></div><p class="pain-text">Une navigation complexe dans les données, comme un traîneau sans rennes, empêchant une prise de décision rapide.</p></div><div class="pain-item reveal-on-scroll" style="transition-delay: 0.2s;"><div class="pain-icon-wrapper"><i class="fa-solid fa-gift"></i></div><p class="pain-text">Le défi de déballer le potentiel caché de vos opérations sans la bonne logique algorithmique.</p></div><div class="pain-item reveal-on-scroll" style="transition-delay: 0.30000000000000004s;"><div class="pain-icon-wrapper"><i class="fa-solid fa-lightbulb"></i></div><p class="pain-text">Manque d&#39;éclat et d&#39;illumination dans vos stratégies, laissant vos idées dans l&#39;ombre.</p></div></div></div></section><style>.section-padding { padding: 80px 0; }
+.bg-contrast { background-color: #111; color: #fff; } /* Toujours sombre pour l'impact */
+.text-white { color: #fff; }
+.text-white-muted { color: rgba(255,255,255,0.7); }
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.pain-item {
+    background: rgba(255,255,255,0.05); /* Glassmorphism subtil */
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s;
+}
+.pain-item:hover { transform: translateY(-5px); background: rgba(255,255,255,0.08); }
+
+.pain-icon-wrapper {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ef4444; /* Rouge "Danger/Pain" */
+}
+.pain-text { font-size: 1.1rem; line-height: 1.5; }</style></div><div data-zflex-section="product_reveal"><section class="reveal-section section-padding"><div class="container container-narrow"><div class="reveal-header text-center reveal-on-scroll"><span class="badge-accent">La Solution</span><h2 class="reveal-title"></h2><div class="reveal-description"></div></div><div class="reveal-image-wrapper reveal-on-scroll" style="transition-delay: 0.3s;"><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2F702b0ea2-ebb2-4797-83c6-a265de9a2a93%2Fmain-f3cdcff1-aa1c-4645-962e-ba1f39010b6a.jpeg?alt=media" alt="Product Reveal" class="product-hero-shot"></div></div></section><style>.container-narrow { max-width: 900px; }
 .badge-accent {
     background: var(--accent-color);
     color: #fff;
@@ -248,4 +274,4 @@
     padding: 2rem;
     border-radius: var(--border-radius);
     border: 1px solid var(--card-border-color);
-}</style></div><div data-zflex-section="call_to_action"></div></main>
+}</style></div></main>
