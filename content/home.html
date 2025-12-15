@@ -78,4 +78,166 @@
     .hero-split .hero-content { text-align: center; order: 2; }
     .hero-split-image { order: 1; margin-bottom: 2rem; }
     .hero-title { font-size: 2.5rem !important; }
-}</style></div><div data-zflex-section="featured_products"></div><div data-zflex-section="about"></div></main>
+}</style></div><div data-zflex-section="pain_points"><section class="section-padding bg-contrast text-inverse"><div class="container"><div class="section-header text-center reveal-on-scroll"><h2 class="section-title text-white">Pourquoi continuer à galérer ?</h2><p class="section-subtitle text-white-muted">Vous connaissez ces problèmes par cœur...</p></div><div class="pain-grid"></div></div></section><style>.section-padding { padding: 80px 0; }
+.bg-contrast { background-color: #111; color: #fff; } /* Toujours sombre pour l'impact */
+.text-white { color: #fff; }
+.text-white-muted { color: rgba(255,255,255,0.7); }
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.pain-item {
+    background: rgba(255,255,255,0.05); /* Glassmorphism subtil */
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s;
+}
+.pain-item:hover { transform: translateY(-5px); background: rgba(255,255,255,0.08); }
+
+.pain-icon-wrapper {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ef4444; /* Rouge "Danger/Pain" */
+}
+.pain-text { font-size: 1.1rem; line-height: 1.5; }</style></div><div data-zflex-section="product_reveal"><section class="reveal-section section-padding"><div class="container container-narrow"><div class="reveal-header text-center reveal-on-scroll"><span class="badge-accent">La Solution</span><h2 class="reveal-title">Enfin une réponse à vos attentes</h2><div class="reveal-description"></div></div><div class="reveal-image-wrapper reveal-on-scroll" style="transition-delay: 0.3s;"></div></div></section><style>.container-narrow { max-width: 900px; }
+.badge-accent {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.reveal-title { font-size: 2.5rem; margin-bottom: 1.5rem; }
+.reveal-description { font-size: 1.2rem; color: var(--text-muted-color); margin-bottom: 3rem; }
+
+.reveal-image-wrapper {
+    position: relative;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    background: var(--input-bg-color); /* Fond léger */
+}
+.product-hero-shot {
+    margin: 0 auto;
+    max-height: 500px;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+.reveal-image-wrapper:hover .product-hero-shot { transform: scale(1.02); }
+
+/* Glow effect derrière l'image */
+.glow-effect {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; height: 80%;
+    background: var(--accent-color);
+    opacity: 0.1;
+    filter: blur(100px);
+    z-index: -1;
+    border-radius: 50%;
+}</style></div><div data-zflex-section="features"><section class="section-padding features-section features-cards" style="background-color: var(--bg-color-alt, rgba(0,0,0,0.02));"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16 reveal-on-scroll"><h2 class="text-3xl md:text-4xl font-bold font-heading mb-4" style="color: var(--text-color)">Pourquoi choisir Focus ?</h2><p class="text-lg opacity-80" style="color: var(--text-color)">Une conception pensée pour les audiophiles exigeants.</p></div><div class="features-grid"></div></div></section><style>/* ZIGZAG STYLES */
+.zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+.zigzag-item:nth-child(even) { flex-direction: row-reverse; }
+.zigzag-content { flex: 1; }
+.zigzag-image { flex: 1; }
+.zigzag-image img { border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.zigzag-content .feature-title { font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color); }
+.zigzag-content .feature-desc { font-size: 1.1rem; color: var(--text-color); }
+
+/* CARDS STYLES */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.feature-card {
+    background: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.feature-card:hover { transform: translateY(-5px); }
+.feature-image-card img { height: 150px; object-fit: contain; margin: 0 auto; margin-bottom: 1rem; }
+
+/* LIST STYLES */
+.max-w-3xl { max-width: 48rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.border-b { border-bottom-width: 1px; }
+.border-card-border { border-color: var(--card-border-color); }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.flex { display: flex; }
+.items-start { align-items: flex-start; }
+.gap-4 { gap: 1rem; }
+.mt-1 { margin-top: 0.25rem; }
+.font-bold { font-weight: 700; }
+.text-lg { font-size: 1.125rem; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .zigzag-item, .zigzag-item:nth-child(even) { flex-direction: column; text-align: center; gap: 2rem; }
+}</style></div><div data-zflex-section="how_it_works"><section class="section-padding how-it-works-section bg-secondary-light"><div class="container text-center"><h2 class="section-title reveal-on-scroll">Comment ça marche ?</h2><p class="section-subtitle reveal-on-scroll mb-5">Simple comme bonjour.</p><div class="steps-wrapper"><div class="step-item reveal-on-scroll" style="transition-delay: 0s;"><div class="step-number">1</div><div class="step-line border-t-2 border-dashed border-gray-300 w-full absolute top-1/2 left-1/2 -z-1 hidden md:block" style="width: 100%; transform: translateY(-50%);"></div><h3 class="step-title mt-4">Commandez</h3><p class="step-desc text-muted">Sélectionnez votre offre préférée.</p></div><div class="step-item reveal-on-scroll" style="transition-delay: 0.2s;"><div class="step-number">2</div><div class="step-line border-t-2 border-dashed border-gray-300 w-full absolute top-1/2 left-1/2 -z-1 hidden md:block" style="width: 100%; transform: translateY(-50%);"></div><h3 class="step-title mt-4">Recevez</h3><p class="step-desc text-muted">Livraison rapide et suivie.</p></div><div class="step-item reveal-on-scroll" style="transition-delay: 0.4s;"><div class="step-number">3</div><div class="step-line border-t-2 border-dashed border-gray-300 w-full absolute top-1/2 left-1/2 -z-1 hidden md:block" style="width: 100%; transform: translateY(-50%);"></div><h3 class="step-title mt-4">Profitez</h3><p class="step-desc text-muted">Transformez votre quotidien.</p></div></div></div></section><style>.bg-secondary-light { background-color: var(--input-bg-color); }
+.steps-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+.step-item {
+    flex: 1;
+    position: relative;
+    padding: 0 1rem;
+}
+.step-number {
+    width: 60px; height: 60px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.step-title { font-weight: bold; font-size: 1.25rem; }
+
+/* Connecteurs (Lignes entre étapes) */
+.steps-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 30px; left: 10%; right: 10%;
+    height: 2px;
+    background: #e5e7eb;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .steps-wrapper { flex-direction: column; gap: 3rem; }
+    .steps-wrapper::before {
+        width: 2px; height: 80%;
+        left: 50%; top: 30px;
+        transform: translateX(-50%);
+    }
+}</style></div></main>
