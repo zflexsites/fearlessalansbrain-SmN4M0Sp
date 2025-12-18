@@ -17,6 +17,18 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* SECTION PADDING GLOBAL */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +38,54 @@ h6 {
   font-family: var(--heading-font);
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+/* TYPOGRAPHY SYSTEM */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-muted-color);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* HERO SPECIFIC TYPOGRAPHY */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSIVE TYPE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+  .section-title {
+    font-size: 2rem !important;
+  }
+  .section-subtitle {
+    font-size: 1rem !important;
+  }
 }
 
 img {
@@ -161,7 +221,7 @@ a:hover {
   transform: translateY(0);
 }
 
-/* --- STACY: Ensure hidden class works properly --- */
-[data-stacy-window].hidden {
+/* --- LOADER PROTECTION --- */
+#router-loader.hidden {
   display: none !important;
 }
