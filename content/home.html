@@ -1,1 +1,376 @@
-<main data-zflex-page-type="home" class="focus-story"><script class="zflex-fragment-data" type="application/json">{"page":{"url":"/"},"storeId":"SmN4M0Sp19kpj1PHk36r","theme":{"productCardVariant":"classic","settingsSchema":[{"type":"group","label":"Story Arc (Structure)","fields":[{"id":"homePageSections","label":"Ordre des Sections","type":"repeater","itemFields":[{"id":"type","label":"Type de Section","type":"select","options":[{"value":"hero","label":"Hero (Intro)"},{"value":"painPoints","label":"Le Problème (Pain Points)"},{"value":"productReveal","label":"La Solution (Reveal)"},{"value":"features","label":"Fonctionnalités"},{"value":"howItWorks","label":"Comment ça marche"},{"value":"testimonials","label":"Avis Clients"},{"value":"faq","label":"FAQ"},{"value":"finalCta","label":"Final CTA (Closing)"}]}]}]},{"type":"group","label":"1. Hero (L'Accroche)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero"},{"id":"hero.headline","label":"Titre Principal","type":"text"},{"id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"id":"hero.image","label":"Image Hero","type":"image"},{"id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"id":"hero.ctaText","label":"Texte Bouton","type":"text","default":"Commander"},{"id":"hero.ctaLink","label":"Lien Bouton","type":"text","default":"#buy"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"id":"painPoints.items","label":"Liste des problèmes","type":"repeater","itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Product Reveal (La Solution)","fields":[{"id":"productReveal.style","label":"Style de Révélation","type":"variant_selector","variantId":"productReveal"},{"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select","options":[{"value":"right","label":"Droite (Standard)"},{"value":"left","label":"Gauche (Alternatif)"}],"default":"right"},{"id":"productReveal.badge","label":"Badge","type":"text","default":"La Révolution"},{"id":"productReveal.title","label":"Titre","type":"text"},{"id":"productReveal.description","label":"Description","type":"textarea"},{"id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"type":"group","label":"4. Fonctionnalités & Bénéfices","fields":[{"id":"features.style","label":"Style d'affichage","type":"variant_selector","variantId":"features"},{"id":"features.title","label":"Titre","type":"text","default":"Pourquoi choisir Focus ?"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Une conception pensée pour les audiophiles exigeants."},{"id":"features.items","label":"Liste des fonctionnalités","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}]}]},{"type":"group","label":"5. Preuve Sociale (Avis)","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials"},{"id":"testimonials.title","label":"Titre de section","type":"text","default":"Ils nous adorent"},{"id":"testimonials.subtitle","label":"Sous-titre","type":"textarea","default":"Ce que nos clients disent de nous."},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}]},{"id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text","default":"Avis certifiés"}]},{"type":"group","label":"6. How It Works (Timeline)","fields":[{"id":"howItWorks.style","label":"Style","type":"variant_selector","variantId":"howItWorks"},{"id":"howItWorks.title","label":"Titre","type":"text","default":"Comment ça marche ?"},{"id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean","default":false},{"id":"howItWorks.steps","label":"Étapes","type":"repeater","itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}]}]},{"type":"group","label":"7. FAQ","fields":[{"id":"faq.style","label":"Style FAQ","type":"variant_selector","variantId":"faq"},{"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean","default":true},{"id":"faq.title","label":"Titre","type":"text","default":"FAQ"},{"id":"faq.subtitle","label":"Sous-titre","type":"text"},{"id":"faq.items","label":"Questions","type":"repeater","itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}]}]},{"type":"group","label":"8. Final CTA (Le Closing)","fields":[{"id":"finalCta.style","label":"Style CTA","type":"variant_selector","variantId":"finalCta"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"id":"finalCta.title","label":"Titre","type":"text","default":"Prêt à commencer ?"},{"id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"id":"finalCta.btnText","label":"Texte Bouton","type":"text","default":"Commander Maintenant"},{"id":"finalCta.btnLink","label":"Lien Bouton","type":"text","default":"#buy"},{"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean","default":true},{"id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text","default":"Satisfait ou Remboursé"},{"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean","default":false},{"id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"type":"group","label":"9. Menu de Navigation (Ancres)","fields":[{"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean","default":true},{"id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text","default":"La Solution"},{"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean","default":true},{"id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text","default":"Avantages"},{"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean","default":true},{"id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text","default":"Fonctionnement"},{"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean","default":true},{"id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text","default":"Témoignages"},{"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean","default":true},{"id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text","default":"FAQ"},{"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean","default":true},{"id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text","default":"Commencer"}]},{"type":"group","label":"Palette & Branding","fields":[{"id":"palette.primary","label":"Primaire (Brand)","type":"color","default":"#000000"},{"id":"palette.secondary","label":"Secondaire","type":"color","default":"#f3f4f6"},{"id":"palette.accent","label":"Accent (Highlights)","type":"color","default":"#3b82f6"},{"id":"palette.background","label":"Fond Page","type":"color","default":"#ffffff"},{"id":"palette.text","label":"Texte Principal","type":"color","default":"#1f2937"},{"id":"palette.cardBackground","label":"Fond Cartes","type":"color","default":"#ffffff"}]},{"type":"group","label":"Global UI (Styles)","fields":[{"id":"header.style","label":"Style de l'En-tête","type":"variant_selector","variantId":"header","default":"solid"},{"id":"typography.headingFont","label":"Police Titres","type":"select","options":[{"value":"Inter","label":"Inter (SaaS)"},{"value":"Playfair Display","label":"Playfair (Luxe)"},{"value":"Montserrat","label":"Montserrat (Bold)"},{"value":"Oswald","label":"Oswald (Street)"}],"default":"Inter"},{"id":"layout.borderRadius","label":"Arrondi (Radius)","type":"select","options":[{"value":"0px","label":"Carré (0px)"},{"value":"0.5rem","label":"Soft (8px)"},{"value":"1rem","label":"Round (16px)"},{"value":"2rem","label":"Extra Round (32px)"}],"default":"0.5rem"}]}],"settings":{"layout":{"borderRadius":"1rem"},"typography":{"headingFont":"Oswald"},"palette":{"background":"#232222","text":"#E0E0E0","primary":"#00ff04","secondary":"#00796B","accent":"#ffbf00","cardBackground":"#05050f"},"computedPalette":{"background":"#232222","text":"#E0E0E0","primary":"#00ff04","secondary":"#00796B","accent":"#ffbf00","cardBackground":"#05050f","textMuted":"#6f6e6e","cardBorder":"#1f1f28","inputBackground":"#09091a","chatResponseBackground":"#282727","primary600":"#00d603","primary700":"#00b803","secondary600":"#005a50"},"computedCssVars":"--bg-color: #232222;\n  --text-color: #E0E0E0;\n  --primary-color: #00ff04;\n  --secondary-color: #00796B;\n  --accent-color: #ffbf00;\n  --text-muted-color: #6f6e6e;\n  --card-bg-color: #05050f;\n  --card-border-color: #1f1f28;\n  --input-bg-color: #09091a;\n  --chat-response-bg-color: #282727;\n  --primary-600: #00d603;\n  --primary-700: #00b803;\n  --secondary-600: #005a50;\n  --contrast-text-bg: 12.020847548054984;"},"homePageSections":[{"type":"hero","title":null},{"type":"featured_products","title":"Notre Sélection"},{"type":"about","title":"Qui sommes-nous ?"}],"manifestUpdatedAt":{"_seconds":1766228858,"_nanoseconds":413000000},"manifest":{"name":"Focus","version":"1.2.0","author":"zFlex Team","description":"Un produit. Une histoire. Une conversion. Le template ultime pour le storytelling immersif.","type":"single-product","variants":{"header":[{"id":"solid","label":"Fixe (Solide)","description":"Fond opaque avec flou de précision dès le chargement."},{"id":"transparent","label":"Transparent (Auto)","description":"Fusionne avec le Hero au repos, devient solide au scroll."}],"hero":[{"id":"cinematic","label":"Cinématique (Vidéo/Image Full)","description":"Immersion totale avec arrière-plan média plein écran."},{"id":"split","label":"Split Screen","description":"Équilibre parfait entre visuel produit et accroche textuelle."},{"id":"minimal","label":"Minimaliste","description":"Focus absolu sur la typographie et le message."}],"productReveal":[{"id":"spotlight","label":"Spotlight (Central)","description":"Mise en lumière dramatique, idéal pour les lancements."},{"id":"split","label":"Split Story (Côté à Côté)","description":"Image et texte se répondent pour expliquer le produit."},{"id":"overlap","label":"Overlap (Profondeur 3D)","description":"Design moderne avec chevauchement pour un effet premium."}],"features":[{"id":"zigzag","label":"Zig-Zag Story","description":"Alternance texte/image pour rythmer la lecture."},{"id":"cards","label":"Grille d'Avantages","description":"Vue d'ensemble rapide des points forts."},{"id":"list","label":"Liste Détaillée","description":"Idéal pour les spécifications techniques."}],"howItWorks":[{"id":"timeline","label":"Timeline Connectée","description":"Parcours séquentiel avec ligne directrice (1->2->3)."},{"id":"cards","label":"Cartes Indépendantes","description":"Étapes affichées sous forme de grille modulaire."}],"testimonials":[{"id":"carousel","label":"Carrousel Classique","description":"Défilement horizontal des avis."},{"id":"grid","label":"Wall of Love (Grille)","description":"Mosaïque d'avis pour une preuve sociale massive."},{"id":"spotlight","label":"Spotlight (Citation unique)","description":"Mise en avant d'un témoignage clé ou d'un ambassadeur."}],"faq":[{"id":"simple","label":"Liste Minimaliste","description":"Lignes épurées, style éditorial."},{"id":"boxed","label":"Boxed (Cartes)","description":"Chaque question est encapsulée (Standard SaaS)."},{"id":"grid","label":"Grille Dense","description":"Double colonne pour les FAQ volumineuses."}],"finalCta":[{"id":"minimal","label":"Minimaliste Centré","description":"Juste l'essentiel pour closer."},{"id":"split","label":"Split Visuel","description":"Rappel du produit à côté de l'appel à l'action."},{"id":"floating","label":"Carte Flottante","description":"Effet 'Pop-up' intégré pour une attention maximale."}]},"settingsSchema":[{"type":"group","label":"Story Arc (Structure)","fields":[{"id":"homePageSections","label":"Ordre des Sections","type":"repeater","itemFields":[{"id":"type","label":"Type de Section","type":"select","options":[{"value":"hero","label":"Hero (Intro)"},{"value":"painPoints","label":"Le Problème (Pain Points)"},{"value":"productReveal","label":"La Solution (Reveal)"},{"value":"features","label":"Fonctionnalités"},{"value":"howItWorks","label":"Comment ça marche"},{"value":"testimonials","label":"Avis Clients"},{"value":"faq","label":"FAQ"},{"value":"finalCta","label":"Final CTA (Closing)"}]}]}]},{"type":"group","label":"1. Hero (L'Accroche)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero"},{"id":"hero.headline","label":"Titre Principal","type":"text"},{"id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"id":"hero.image","label":"Image Hero","type":"image"},{"id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"id":"hero.ctaText","label":"Texte Bouton","type":"text","default":"Commander"},{"id":"hero.ctaLink","label":"Lien Bouton","type":"text","default":"#buy"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"id":"painPoints.items","label":"Liste des problèmes","type":"repeater","itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Product Reveal (La Solution)","fields":[{"id":"productReveal.style","label":"Style de Révélation","type":"variant_selector","variantId":"productReveal"},{"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select","options":[{"value":"right","label":"Droite (Standard)"},{"value":"left","label":"Gauche (Alternatif)"}],"default":"right"},{"id":"productReveal.badge","label":"Badge","type":"text","default":"La Révolution"},{"id":"productReveal.title","label":"Titre","type":"text"},{"id":"productReveal.description","label":"Description","type":"textarea"},{"id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"type":"group","label":"4. Fonctionnalités & Bénéfices","fields":[{"id":"features.style","label":"Style d'affichage","type":"variant_selector","variantId":"features"},{"id":"features.title","label":"Titre","type":"text","default":"Pourquoi choisir Focus ?"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Une conception pensée pour les audiophiles exigeants."},{"id":"features.items","label":"Liste des fonctionnalités","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}]}]},{"type":"group","label":"5. Preuve Sociale (Avis)","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials"},{"id":"testimonials.title","label":"Titre de section","type":"text","default":"Ils nous adorent"},{"id":"testimonials.subtitle","label":"Sous-titre","type":"textarea","default":"Ce que nos clients disent de nous."},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}]},{"id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text","default":"Avis certifiés"}]},{"type":"group","label":"6. How It Works (Timeline)","fields":[{"id":"howItWorks.style","label":"Style","type":"variant_selector","variantId":"howItWorks"},{"id":"howItWorks.title","label":"Titre","type":"text","default":"Comment ça marche ?"},{"id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean","default":false},{"id":"howItWorks.steps","label":"Étapes","type":"repeater","itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}]}]},{"type":"group","label":"7. FAQ","fields":[{"id":"faq.style","label":"Style FAQ","type":"variant_selector","variantId":"faq"},{"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean","default":true},{"id":"faq.title","label":"Titre","type":"text","default":"FAQ"},{"id":"faq.subtitle","label":"Sous-titre","type":"text"},{"id":"faq.items","label":"Questions","type":"repeater","itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}]}]},{"type":"group","label":"8. Final CTA (Le Closing)","fields":[{"id":"finalCta.style","label":"Style CTA","type":"variant_selector","variantId":"finalCta"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"id":"finalCta.title","label":"Titre","type":"text","default":"Prêt à commencer ?"},{"id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"id":"finalCta.btnText","label":"Texte Bouton","type":"text","default":"Commander Maintenant"},{"id":"finalCta.btnLink","label":"Lien Bouton","type":"text","default":"#buy"},{"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean","default":true},{"id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text","default":"Satisfait ou Remboursé"},{"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean","default":false},{"id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"type":"group","label":"9. Menu de Navigation (Ancres)","fields":[{"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean","default":true},{"id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text","default":"La Solution"},{"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean","default":true},{"id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text","default":"Avantages"},{"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean","default":true},{"id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text","default":"Fonctionnement"},{"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean","default":true},{"id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text","default":"Témoignages"},{"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean","default":true},{"id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text","default":"FAQ"},{"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean","default":true},{"id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text","default":"Commencer"}]},{"type":"group","label":"Palette & Branding","fields":[{"id":"palette.primary","label":"Primaire (Brand)","type":"color","default":"#000000"},{"id":"palette.secondary","label":"Secondaire","type":"color","default":"#f3f4f6"},{"id":"palette.accent","label":"Accent (Highlights)","type":"color","default":"#3b82f6"},{"id":"palette.background","label":"Fond Page","type":"color","default":"#ffffff"},{"id":"palette.text","label":"Texte Principal","type":"color","default":"#1f2937"},{"id":"palette.cardBackground","label":"Fond Cartes","type":"color","default":"#ffffff"}]},{"type":"group","label":"Global UI (Styles)","fields":[{"id":"header.style","label":"Style de l'En-tête","type":"variant_selector","variantId":"header","default":"solid"},{"id":"typography.headingFont","label":"Police Titres","type":"select","options":[{"value":"Inter","label":"Inter (SaaS)"},{"value":"Playfair Display","label":"Playfair (Luxe)"},{"value":"Montserrat","label":"Montserrat (Bold)"},{"value":"Oswald","label":"Oswald (Street)"}],"default":"Inter"},{"id":"layout.borderRadius","label":"Arrondi (Radius)","type":"select","options":[{"value":"0px","label":"Carré (0px)"},{"value":"0.5rem","label":"Soft (8px)"},{"value":"1rem","label":"Round (16px)"},{"value":"2rem","label":"Extra Round (32px)"}],"default":"0.5rem"}]}]},"checksum":"8f820d29273d7685c01427a53e8a5dcf9f3c32097efc7b1b6b84a9112bce3690","themeId":"focus","variants":{"header":[{"id":"solid","label":"Fixe (Solide)","description":"Fond opaque avec flou de précision dès le chargement."},{"id":"transparent","label":"Transparent (Auto)","description":"Fusionne avec le Hero au repos, devient solide au scroll."}],"hero":[{"id":"cinematic","label":"Cinématique (Vidéo/Image Full)","description":"Immersion totale avec arrière-plan média plein écran."},{"id":"split","label":"Split Screen","description":"Équilibre parfait entre visuel produit et accroche textuelle."},{"id":"minimal","label":"Minimaliste","description":"Focus absolu sur la typographie et le message."}],"productReveal":[{"id":"spotlight","label":"Spotlight (Central)","description":"Mise en lumière dramatique, idéal pour les lancements."},{"id":"split","label":"Split Story (Côté à Côté)","description":"Image et texte se répondent pour expliquer le produit."},{"id":"overlap","label":"Overlap (Profondeur 3D)","description":"Design moderne avec chevauchement pour un effet premium."}],"features":[{"id":"zigzag","label":"Zig-Zag Story","description":"Alternance texte/image pour rythmer la lecture."},{"id":"cards","label":"Grille d'Avantages","description":"Vue d'ensemble rapide des points forts."},{"id":"list","label":"Liste Détaillée","description":"Idéal pour les spécifications techniques."}],"howItWorks":[{"id":"timeline","label":"Timeline Connectée","description":"Parcours séquentiel avec ligne directrice (1->2->3)."},{"id":"cards","label":"Cartes Indépendantes","description":"Étapes affichées sous forme de grille modulaire."}],"testimonials":[{"id":"carousel","label":"Carrousel Classique","description":"Défilement horizontal des avis."},{"id":"grid","label":"Wall of Love (Grille)","description":"Mosaïque d'avis pour une preuve sociale massive."},{"id":"spotlight","label":"Spotlight (Citation unique)","description":"Mise en avant d'un témoignage clé ou d'un ambassadeur."}],"faq":[{"id":"simple","label":"Liste Minimaliste","description":"Lignes épurées, style éditorial."},{"id":"boxed","label":"Boxed (Cartes)","description":"Chaque question est encapsulée (Standard SaaS)."},{"id":"grid","label":"Grille Dense","description":"Double colonne pour les FAQ volumineuses."}],"finalCta":[{"id":"minimal","label":"Minimaliste Centré","description":"Juste l'essentiel pour closer."},{"id":"split","label":"Split Visuel","description":"Rappel du produit à côté de l'appel à l'action."},{"id":"floating","label":"Carte Flottante","description":"Effet 'Pop-up' intégré pour une attention maximale."}]},"headerVariant":"default","version":"1.2.0","baseTemplate":"focus"},"apiEndpoints":{"stacy":"http://127.0.0.1:5001/zflex-wizard/us-central1/askStacyApi","resumeConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/resumeConversationApi","createConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/createConversationApi","continueConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/continueConversationApi","createOrder":"http://127.0.0.1:5001/zflex-wizard/us-central1/createOrderApi","subscribeToNewsletter":"http://127.0.0.1:5001/zflex-wizard/us-central1/subscribeToNewsletterApi","submitReview":"http://127.0.0.1:5001/zflex-wizard/us-central1/submitReviewApi","getOrderDetails":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderApi","trackEvent":"http://127.0.0.1:5001/zflex-wizard/us-central1/tracker","initiatePayment":"http://127.0.0.1:5001/zflex-wizard/us-central1/initiatePayment","getOrderStatusApi":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderStatusApi","getProspectInfo":"http://127.0.0.1:5001/zflex-wizard/us-central1/getProspectInfo"}}</script></main>
+<main data-zflex-page-type="home" class="focus-story"><script class="zflex-fragment-data" type="application/json">{"page":{"url":"/"},"storeId":"SmN4M0Sp19kpj1PHk36r","theme":{"productCardVariant":"classic","settingsSchema":[{"type":"group","label":"Story Arc (Structure)","fields":[{"id":"homePageSections","label":"Ordre des Sections","type":"repeater","itemFields":[{"id":"type","label":"Type de Section","type":"select","options":[{"value":"hero","label":"Hero (Intro)"},{"value":"painPoints","label":"Le Problème (Pain Points)"},{"value":"productReveal","label":"La Solution (Reveal)"},{"value":"features","label":"Fonctionnalités"},{"value":"howItWorks","label":"Comment ça marche"},{"value":"testimonials","label":"Avis Clients"},{"value":"faq","label":"FAQ"},{"value":"finalCta","label":"Final CTA (Closing)"}]}]}]},{"type":"group","label":"1. Hero (L'Accroche)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero"},{"id":"hero.headline","label":"Titre Principal","type":"text"},{"id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"id":"hero.image","label":"Image Hero","type":"image"},{"id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"id":"hero.ctaText","label":"Texte Bouton","type":"text","default":"Commander"},{"id":"hero.ctaLink","label":"Lien Bouton","type":"text","default":"#buy"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"id":"painPoints.items","label":"Liste des problèmes","type":"repeater","itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Product Reveal (La Solution)","fields":[{"id":"productReveal.style","label":"Style de Révélation","type":"variant_selector","variantId":"productReveal"},{"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select","options":[{"value":"right","label":"Droite (Standard)"},{"value":"left","label":"Gauche (Alternatif)"}],"default":"right"},{"id":"productReveal.badge","label":"Badge","type":"text","default":"La Révolution"},{"id":"productReveal.title","label":"Titre","type":"text"},{"id":"productReveal.description","label":"Description","type":"textarea"},{"id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"type":"group","label":"4. Fonctionnalités & Bénéfices","fields":[{"id":"features.style","label":"Style d'affichage","type":"variant_selector","variantId":"features"},{"id":"features.title","label":"Titre","type":"text","default":"Pourquoi choisir Focus ?"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Une conception pensée pour les audiophiles exigeants."},{"id":"features.items","label":"Liste des fonctionnalités","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}]}]},{"type":"group","label":"5. Preuve Sociale (Avis)","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials"},{"id":"testimonials.title","label":"Titre de section","type":"text","default":"Ils nous adorent"},{"id":"testimonials.subtitle","label":"Sous-titre","type":"textarea","default":"Ce que nos clients disent de nous."},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}]},{"id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text","default":"Avis certifiés"}]},{"type":"group","label":"6. How It Works (Timeline)","fields":[{"id":"howItWorks.style","label":"Style","type":"variant_selector","variantId":"howItWorks"},{"id":"howItWorks.title","label":"Titre","type":"text","default":"Comment ça marche ?"},{"id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean","default":false},{"id":"howItWorks.steps","label":"Étapes","type":"repeater","itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}]}]},{"type":"group","label":"7. FAQ","fields":[{"id":"faq.style","label":"Style FAQ","type":"variant_selector","variantId":"faq"},{"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean","default":true},{"id":"faq.title","label":"Titre","type":"text","default":"FAQ"},{"id":"faq.subtitle","label":"Sous-titre","type":"text"},{"id":"faq.items","label":"Questions","type":"repeater","itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}]}]},{"type":"group","label":"8. Final CTA (Le Closing)","fields":[{"id":"finalCta.style","label":"Style CTA","type":"variant_selector","variantId":"finalCta"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"id":"finalCta.title","label":"Titre","type":"text","default":"Prêt à commencer ?"},{"id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"id":"finalCta.btnText","label":"Texte Bouton","type":"text","default":"Commander Maintenant"},{"id":"finalCta.btnLink","label":"Lien Bouton","type":"text","default":"#buy"},{"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean","default":true},{"id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text","default":"Satisfait ou Remboursé"},{"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean","default":false},{"id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"type":"group","label":"9. Menu de Navigation (Ancres)","fields":[{"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean","default":true},{"id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text","default":"La Solution"},{"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean","default":true},{"id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text","default":"Avantages"},{"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean","default":true},{"id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text","default":"Fonctionnement"},{"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean","default":true},{"id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text","default":"Témoignages"},{"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean","default":true},{"id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text","default":"FAQ"},{"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean","default":true},{"id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text","default":"Commencer"}]},{"type":"group","label":"Palette & Branding","fields":[{"id":"palette.primary","label":"Primaire (Brand)","type":"color","default":"#000000"},{"id":"palette.secondary","label":"Secondaire","type":"color","default":"#f3f4f6"},{"id":"palette.accent","label":"Accent (Highlights)","type":"color","default":"#3b82f6"},{"id":"palette.background","label":"Fond Page","type":"color","default":"#ffffff"},{"id":"palette.text","label":"Texte Principal","type":"color","default":"#1f2937"},{"id":"palette.cardBackground","label":"Fond Cartes","type":"color","default":"#ffffff"}]},{"type":"group","label":"Global UI (Styles)","fields":[{"id":"header.style","label":"Style de l'En-tête","type":"variant_selector","variantId":"header","default":"solid"},{"id":"typography.headingFont","label":"Police Titres","type":"select","options":[{"value":"Inter","label":"Inter (SaaS)"},{"value":"Playfair Display","label":"Playfair (Luxe)"},{"value":"Montserrat","label":"Montserrat (Bold)"},{"value":"Oswald","label":"Oswald (Street)"}],"default":"Inter"},{"id":"layout.borderRadius","label":"Arrondi (Radius)","type":"select","options":[{"value":"0px","label":"Carré (0px)"},{"value":"0.5rem","label":"Soft (8px)"},{"value":"1rem","label":"Round (16px)"},{"value":"2rem","label":"Extra Round (32px)"}],"default":"0.5rem"}]}],"homePageSections":[{"type":"hero","title":null},{"type":"featured_products","title":"Notre Sélection"},{"type":"about","title":"Qui sommes-nous ?"}],"manifestUpdatedAt":{"_seconds":1766228858,"_nanoseconds":413000000},"manifest":{"name":"Focus","version":"1.2.0","author":"zFlex Team","description":"Un produit. Une histoire. Une conversion. Le template ultime pour le storytelling immersif.","type":"single-product","variants":{"header":[{"id":"solid","label":"Fixe (Solide)","description":"Fond opaque avec flou de précision dès le chargement."},{"id":"transparent","label":"Transparent (Auto)","description":"Fusionne avec le Hero au repos, devient solide au scroll."}],"hero":[{"id":"cinematic","label":"Cinématique (Vidéo/Image Full)","description":"Immersion totale avec arrière-plan média plein écran."},{"id":"split","label":"Split Screen","description":"Équilibre parfait entre visuel produit et accroche textuelle."},{"id":"minimal","label":"Minimaliste","description":"Focus absolu sur la typographie et le message."}],"productReveal":[{"id":"spotlight","label":"Spotlight (Central)","description":"Mise en lumière dramatique, idéal pour les lancements."},{"id":"split","label":"Split Story (Côté à Côté)","description":"Image et texte se répondent pour expliquer le produit."},{"id":"overlap","label":"Overlap (Profondeur 3D)","description":"Design moderne avec chevauchement pour un effet premium."}],"features":[{"id":"zigzag","label":"Zig-Zag Story","description":"Alternance texte/image pour rythmer la lecture."},{"id":"cards","label":"Grille d'Avantages","description":"Vue d'ensemble rapide des points forts."},{"id":"list","label":"Liste Détaillée","description":"Idéal pour les spécifications techniques."}],"howItWorks":[{"id":"timeline","label":"Timeline Connectée","description":"Parcours séquentiel avec ligne directrice (1->2->3)."},{"id":"cards","label":"Cartes Indépendantes","description":"Étapes affichées sous forme de grille modulaire."}],"testimonials":[{"id":"carousel","label":"Carrousel Classique","description":"Défilement horizontal des avis."},{"id":"grid","label":"Wall of Love (Grille)","description":"Mosaïque d'avis pour une preuve sociale massive."},{"id":"spotlight","label":"Spotlight (Citation unique)","description":"Mise en avant d'un témoignage clé ou d'un ambassadeur."}],"faq":[{"id":"simple","label":"Liste Minimaliste","description":"Lignes épurées, style éditorial."},{"id":"boxed","label":"Boxed (Cartes)","description":"Chaque question est encapsulée (Standard SaaS)."},{"id":"grid","label":"Grille Dense","description":"Double colonne pour les FAQ volumineuses."}],"finalCta":[{"id":"minimal","label":"Minimaliste Centré","description":"Juste l'essentiel pour closer."},{"id":"split","label":"Split Visuel","description":"Rappel du produit à côté de l'appel à l'action."},{"id":"floating","label":"Carte Flottante","description":"Effet 'Pop-up' intégré pour une attention maximale."}]},"settingsSchema":[{"type":"group","label":"Story Arc (Structure)","fields":[{"id":"homePageSections","label":"Ordre des Sections","type":"repeater","itemFields":[{"id":"type","label":"Type de Section","type":"select","options":[{"value":"hero","label":"Hero (Intro)"},{"value":"painPoints","label":"Le Problème (Pain Points)"},{"value":"productReveal","label":"La Solution (Reveal)"},{"value":"features","label":"Fonctionnalités"},{"value":"howItWorks","label":"Comment ça marche"},{"value":"testimonials","label":"Avis Clients"},{"value":"faq","label":"FAQ"},{"value":"finalCta","label":"Final CTA (Closing)"}]}]}]},{"type":"group","label":"1. Hero (L'Accroche)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero"},{"id":"hero.headline","label":"Titre Principal","type":"text"},{"id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"id":"hero.image","label":"Image Hero","type":"image"},{"id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"id":"hero.ctaText","label":"Texte Bouton","type":"text","default":"Commander"},{"id":"hero.ctaLink","label":"Lien Bouton","type":"text","default":"#buy"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"id":"painPoints.items","label":"Liste des problèmes","type":"repeater","itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Product Reveal (La Solution)","fields":[{"id":"productReveal.style","label":"Style de Révélation","type":"variant_selector","variantId":"productReveal"},{"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select","options":[{"value":"right","label":"Droite (Standard)"},{"value":"left","label":"Gauche (Alternatif)"}],"default":"right"},{"id":"productReveal.badge","label":"Badge","type":"text","default":"La Révolution"},{"id":"productReveal.title","label":"Titre","type":"text"},{"id":"productReveal.description","label":"Description","type":"textarea"},{"id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"type":"group","label":"4. Fonctionnalités & Bénéfices","fields":[{"id":"features.style","label":"Style d'affichage","type":"variant_selector","variantId":"features"},{"id":"features.title","label":"Titre","type":"text","default":"Pourquoi choisir Focus ?"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Une conception pensée pour les audiophiles exigeants."},{"id":"features.items","label":"Liste des fonctionnalités","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}]}]},{"type":"group","label":"5. Preuve Sociale (Avis)","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials"},{"id":"testimonials.title","label":"Titre de section","type":"text","default":"Ils nous adorent"},{"id":"testimonials.subtitle","label":"Sous-titre","type":"textarea","default":"Ce que nos clients disent de nous."},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}]},{"id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text","default":"Avis certifiés"}]},{"type":"group","label":"6. How It Works (Timeline)","fields":[{"id":"howItWorks.style","label":"Style","type":"variant_selector","variantId":"howItWorks"},{"id":"howItWorks.title","label":"Titre","type":"text","default":"Comment ça marche ?"},{"id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean","default":false},{"id":"howItWorks.steps","label":"Étapes","type":"repeater","itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}]}]},{"type":"group","label":"7. FAQ","fields":[{"id":"faq.style","label":"Style FAQ","type":"variant_selector","variantId":"faq"},{"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean","default":true},{"id":"faq.title","label":"Titre","type":"text","default":"FAQ"},{"id":"faq.subtitle","label":"Sous-titre","type":"text"},{"id":"faq.items","label":"Questions","type":"repeater","itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}]}]},{"type":"group","label":"8. Final CTA (Le Closing)","fields":[{"id":"finalCta.style","label":"Style CTA","type":"variant_selector","variantId":"finalCta"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"id":"finalCta.title","label":"Titre","type":"text","default":"Prêt à commencer ?"},{"id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"id":"finalCta.btnText","label":"Texte Bouton","type":"text","default":"Commander Maintenant"},{"id":"finalCta.btnLink","label":"Lien Bouton","type":"text","default":"#buy"},{"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean","default":true},{"id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text","default":"Satisfait ou Remboursé"},{"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean","default":false},{"id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"type":"group","label":"9. Menu de Navigation (Ancres)","fields":[{"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean","default":true},{"id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text","default":"La Solution"},{"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean","default":true},{"id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text","default":"Avantages"},{"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean","default":true},{"id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text","default":"Fonctionnement"},{"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean","default":true},{"id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text","default":"Témoignages"},{"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean","default":true},{"id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text","default":"FAQ"},{"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean","default":true},{"id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text","default":"Commencer"}]},{"type":"group","label":"Palette & Branding","fields":[{"id":"palette.primary","label":"Primaire (Brand)","type":"color","default":"#000000"},{"id":"palette.secondary","label":"Secondaire","type":"color","default":"#f3f4f6"},{"id":"palette.accent","label":"Accent (Highlights)","type":"color","default":"#3b82f6"},{"id":"palette.background","label":"Fond Page","type":"color","default":"#ffffff"},{"id":"palette.text","label":"Texte Principal","type":"color","default":"#1f2937"},{"id":"palette.cardBackground","label":"Fond Cartes","type":"color","default":"#ffffff"}]},{"type":"group","label":"Global UI (Styles)","fields":[{"id":"header.style","label":"Style de l'En-tête","type":"variant_selector","variantId":"header","default":"solid"},{"id":"typography.headingFont","label":"Police Titres","type":"select","options":[{"value":"Inter","label":"Inter (SaaS)"},{"value":"Playfair Display","label":"Playfair (Luxe)"},{"value":"Montserrat","label":"Montserrat (Bold)"},{"value":"Oswald","label":"Oswald (Street)"}],"default":"Inter"},{"id":"layout.borderRadius","label":"Arrondi (Radius)","type":"select","options":[{"value":"0px","label":"Carré (0px)"},{"value":"0.5rem","label":"Soft (8px)"},{"value":"1rem","label":"Round (16px)"},{"value":"2rem","label":"Extra Round (32px)"}],"default":"0.5rem"}]}]},"checksum":"8f820d29273d7685c01427a53e8a5dcf9f3c32097efc7b1b6b84a9112bce3690","themeId":"focus","variants":{"header":[{"id":"solid","label":"Fixe (Solide)","description":"Fond opaque avec flou de précision dès le chargement."},{"id":"transparent","label":"Transparent (Auto)","description":"Fusionne avec le Hero au repos, devient solide au scroll."}],"hero":[{"id":"cinematic","label":"Cinématique (Vidéo/Image Full)","description":"Immersion totale avec arrière-plan média plein écran."},{"id":"split","label":"Split Screen","description":"Équilibre parfait entre visuel produit et accroche textuelle."},{"id":"minimal","label":"Minimaliste","description":"Focus absolu sur la typographie et le message."}],"productReveal":[{"id":"spotlight","label":"Spotlight (Central)","description":"Mise en lumière dramatique, idéal pour les lancements."},{"id":"split","label":"Split Story (Côté à Côté)","description":"Image et texte se répondent pour expliquer le produit."},{"id":"overlap","label":"Overlap (Profondeur 3D)","description":"Design moderne avec chevauchement pour un effet premium."}],"features":[{"id":"zigzag","label":"Zig-Zag Story","description":"Alternance texte/image pour rythmer la lecture."},{"id":"cards","label":"Grille d'Avantages","description":"Vue d'ensemble rapide des points forts."},{"id":"list","label":"Liste Détaillée","description":"Idéal pour les spécifications techniques."}],"howItWorks":[{"id":"timeline","label":"Timeline Connectée","description":"Parcours séquentiel avec ligne directrice (1->2->3)."},{"id":"cards","label":"Cartes Indépendantes","description":"Étapes affichées sous forme de grille modulaire."}],"testimonials":[{"id":"carousel","label":"Carrousel Classique","description":"Défilement horizontal des avis."},{"id":"grid","label":"Wall of Love (Grille)","description":"Mosaïque d'avis pour une preuve sociale massive."},{"id":"spotlight","label":"Spotlight (Citation unique)","description":"Mise en avant d'un témoignage clé ou d'un ambassadeur."}],"faq":[{"id":"simple","label":"Liste Minimaliste","description":"Lignes épurées, style éditorial."},{"id":"boxed","label":"Boxed (Cartes)","description":"Chaque question est encapsulée (Standard SaaS)."},{"id":"grid","label":"Grille Dense","description":"Double colonne pour les FAQ volumineuses."}],"finalCta":[{"id":"minimal","label":"Minimaliste Centré","description":"Juste l'essentiel pour closer."},{"id":"split","label":"Split Visuel","description":"Rappel du produit à côté de l'appel à l'action."},{"id":"floating","label":"Carte Flottante","description":"Effet 'Pop-up' intégré pour une attention maximale."}]},"headerVariant":"default","version":"1.2.0","settings":{"layout":{"borderRadius":"1rem"},"typography":{"headingFont":"Playfair Display"},"palette":{"background":"#000000","text":"#E0E0E0","primary":"#00ff04","secondary":"#00796B","accent":"#ffbf00","cardBackground":"#232222"},"computedPalette":{"background":"#000000","text":"#E0E0E0","primary":"#00ff04","secondary":"#00796B","accent":"#ffbf00","cardBackground":"#232222","textMuted":"#5a5a5a","cardBorder":"#3a3939","inputBackground":"#2b2a2a","chatResponseBackground":"#050505","primary600":"#00d603","primary700":"#00b803","secondary600":"#005a50"},"computedCssVars":"--bg-color: #000000;\n  --text-color: #E0E0E0;\n  --primary-color: #00ff04;\n  --secondary-color: #00796B;\n  --accent-color: #ffbf00;\n  --text-muted-color: #5a5a5a;\n  --card-bg-color: #232222;\n  --card-border-color: #3a3939;\n  --input-bg-color: #2b2a2a;\n  --chat-response-bg-color: #050505;\n  --primary-600: #00d603;\n  --primary-700: #00b803;\n  --secondary-600: #005a50;\n  --contrast-text-bg: 15.908084190807749;"},"baseTemplate":"focus"},"apiEndpoints":{"stacy":"http://127.0.0.1:5001/zflex-wizard/us-central1/askStacyApi","resumeConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/resumeConversationApi","createConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/createConversationApi","continueConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/continueConversationApi","createOrder":"http://127.0.0.1:5001/zflex-wizard/us-central1/createOrderApi","subscribeToNewsletter":"http://127.0.0.1:5001/zflex-wizard/us-central1/subscribeToNewsletterApi","submitReview":"http://127.0.0.1:5001/zflex-wizard/us-central1/submitReviewApi","getOrderDetails":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderApi","trackEvent":"http://127.0.0.1:5001/zflex-wizard/us-central1/tracker","initiatePayment":"http://127.0.0.1:5001/zflex-wizard/us-central1/initiatePayment","getOrderStatusApi":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderStatusApi","getProspectInfo":"http://127.0.0.1:5001/zflex-wizard/us-central1/getProspectInfo"}}</script><div data-zflex-section="hero" class="mb-24 last:mb-0"><div data-zflex-variant-container="hero"><section class="hero-section hero-cinematic text-contrast"><div class="hero-bg-media"><div class="hero-image" style="background-image: url('http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-19670e0d-0cf6-4d6c-a16f-5925eadc0390.jpeg?alt=media&amp;token=c1392d48-98b7-494c-a291-4e1b1c9f40af');" data-zflex-bind="image" data-zflex-id="hero.image"></div><div class="image-overlay"></div></div><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title reveal-on-scroll" data-zflex-bind="headline" data-zflex-id="hero.headline">THINK FEARLESS. THINK CHRISTMAS.</h1><p class="hero-subtitle reveal-on-scroll" style="transition-delay: 0.2s" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">L&#39;Intelligence Algorithmique au service de votre Vision festive. Repoussez les limites de votre potentiel, même pendant les fêtes.</p><div class="hero-cta reveal-on-scroll" style="transition-delay: 0.4s"><a href="/catalog" class="zflex-link btn btn-primary">Voir la Collection (2)</a></div></div></div><div class="scroll-indicator animate-bounce"><i class="fa-solid fa-chevron-down"></i></div></section></div><template data-zflex-variant="hero.cinematic"><section class="hero-section hero-cinematic text-contrast"><div class="hero-bg-media"><div class="hero-image" style="background-image: url('');" data-zflex-bind="image"></div><div class="image-overlay"></div></div><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title" data-zflex-bind="headline" data-zflex-id="hero.headline">Titre</h1><p class="hero-subtitle" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Sous-titre</p><div class="hero-cta"><a href="#" class="zflex-link btn btn-primary" data-zflex-bind="ctaText" data-zflex-id="hero.ctaText">Action</a></div></div></div><div class="scroll-indicator animate-bounce"><i class="fa-solid fa-chevron-down"></i></div></section></template><template data-zflex-variant="hero.split"><section class="hero-section hero-split"><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title" data-zflex-bind="headline" data-zflex-id="hero.headline">Titre</h1><p class="hero-subtitle" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Sous-titre</p><div class="hero-cta"><a href="#" class="zflex-link btn btn-primary" data-zflex-bind="ctaText" data-zflex-id="hero.ctaText">Action</a></div></div><div class="hero-split-image"><img src="" alt="Hero Image" data-zflex-bind="image" data-zflex-id="hero.image"></div></div><div class="scroll-indicator animate-bounce"><i class="fa-solid fa-chevron-down"></i></div></section></template><template data-zflex-variant="hero.minimal"><section class="hero-section hero-minimal"><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title" data-zflex-bind="headline" data-zflex-id="hero.headline">Titre</h1><p class="hero-subtitle" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Sous-titre</p><div class="hero-cta"><a href="#" class="zflex-link btn btn-primary" data-zflex-bind="ctaText" data-zflex-id="hero.ctaText">Action</a></div></div></div></section></template><style>/* HERO STYLES LOCAL SCOPE */
+  .hero-section {
+    position: relative;
+    min-height: 90vh; /* Fullscreen par défaut */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+
+  /* --- CINEMATIC VARIANT --- */
+  .hero-cinematic .hero-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .hero-cinematic .hero-video,
+  .hero-cinematic .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .video-overlay,
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Assombrissement pour lisibilité */
+  }
+  .hero-cinematic .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff; /* Toujours blanc sur fond sombre */
+  }
+  /* Removed local hero-title/subtitle sizes to use global consistent ones override */
+
+  /* --- SPLIT VARIANT --- */
+  .hero-split .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .hero-split .hero-content {
+    text-align: left;
+  }
+  /* Using global .hero-title and .hero-subtitle */
+  .hero-split-image img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  /* --- MINIMAL VARIANT --- */
+  .hero-minimal {
+    min-height: 60vh;
+    text-align: center;
+    background: var(--bg-color);
+  }
+  .hero-minimal .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  /* Minimal specifically wants larger text, so we keep override but aligned with system variables */
+  .hero-minimal .hero-title {
+    font-size: 4.5rem;
+    letter-spacing: -2px;
+  }
+  .hero-minimal .hero-subtitle {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+
+  /* Scroll Indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-color);
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-split .container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      order: 0; /* Reset */
+    }
+    .hero-split .hero-content {
+      text-align: center;
+      order: 2;
+    }
+    .hero-split-image {
+      order: 1;
+      margin-bottom: 2rem;
+    }
+    .hero-minimal .hero-title {
+      font-size: 3rem !important;
+    }
+  }</style></div><div data-zflex-section="features" class="mb-24 last:mb-0"><div data-zflex-variant-container="features"><section id="features" class="reveal-section features-section features-zigzag" style="background-color: var(--bg-color-alt, rgba(0, 0, 0, 0.02))" data-zflex-section="features"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16 reveal-on-scroll"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Pourquoi choisir FAB ?</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Une conception pensée pour les audiophiles exigeants.</p></div><div class="zigzag-wrapper" data-zflex-repeater="features.items"><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[0].title">Optimisation de la Liste de Souhaits Algorithmiques facon Fearless</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[0].description">Nous affinons vos objectifs d&#39;entreprise pour les transformer en une liste de souhaits claire et réalisable, optimisée par nos algorithmes intelligents.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-45d0bc17-e9e0-4e5d-9be7-a2108cf6bcca.jpeg?alt=media&amp;token=36fc689d-b666-4029-b60d-0c9e79a15962" alt="Optimisation de la Liste de Souhaits Algorithmiques facon Fearless" data-zflex-bind="image" data-zflex-id="features.items[0].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="fa-solid fa-star" data-zflex-bind="icon" data-zflex-id="features.items[0].icon"></i></div></div></div></div><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[1].title">Prévision des Tendances Festives avec Précision de Lutin</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[1].description">Anticipez les besoins du marché et les tendances saisonnières avec une acuité inégalée, comme si vous aviez les prédictions du Père Noël lui-même.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-5ab04baf-6f8f-42b6-a30d-93091f05c803.jpeg?alt=media&amp;token=306f3fe5-3d88-4e7b-8d4d-bd2e89303f47" alt="Prévision des Tendances Festives avec Précision de Lutin" data-zflex-bind="image" data-zflex-id="features.items[1].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="fa-solid fa-star" data-zflex-bind="icon" data-zflex-id="features.items[1].icon"></i></div></div></div></div><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[2].title">Des Solutions qui Illuminent Votre Croissance comme un Sapin</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[2].description">Nos stratégies logicielles sur mesure agissent comme des décorations intelligentes, éclairant chaque aspect de votre entreprise pour une croissance spectaculaire.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-d9a3950d-1249-4a0b-a0d2-38a5f04fa9d9.jpg?alt=media&amp;token=dbb7ae64-580b-46c5-9fe8-e989443eb090" alt="Des Solutions qui Illuminent Votre Croissance comme un Sapin" data-zflex-bind="image" data-zflex-id="features.items[2].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="fa-solid fa-star" data-zflex-bind="icon" data-zflex-id="features.items[2].icon"></i></div></div></div></div><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[3].title">La Magie de la Prise de Décision Éclairée</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[3].description">Transformez l&#39;incertitude en clarté avec des algorithmes qui guident vos choix comme l&#39;étoile du berger, menant à des résultats brillants.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-c74effac-9a23-4fff-a5cc-7dca97360179.jpg?alt=media&amp;token=5210a65a-47d6-48fe-b222-123dacec24d4" alt="La Magie de la Prise de Décision Éclairée" data-zflex-bind="image" data-zflex-id="features.items[3].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="fa-solid fa-star" data-zflex-bind="icon" data-zflex-id="features.items[3].icon"></i></div></div></div></div></div></div></section></div><template data-zflex-variant="features.zigzag"><section class="reveal-section features-section features-zigzag" style="background-color: var(--bg-color-alt)"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Titre</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Sous-titre</p></div><div class="zigzag-wrapper" data-zflex-repeater="features.items"></div></div></section></template><template data-zflex-variant="features.cards"><section class="reveal-section features-section features-cards" style="background-color: var(--bg-color-alt)"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Titre</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Sous-titre</p></div><div class="features-grid" data-zflex-repeater="features.items"></div></div></section></template><template data-zflex-variant="features.list"><section class="reveal-section features-section features-list" style="background-color: var(--bg-color-alt)"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Titre</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Sous-titre</p></div><div class="features-list-wrapper max-w-3xl mx-auto" data-zflex-repeater="features.items"></div></div></section></template><template data-zflex-template="features.items"><div class="feature-card"><div class="feature-image-card"><img src="" alt="" data-zflex-bind="image" style="display: none" class="feature-img-bind"><div class="feature-icon-bind text-5xl text-accent mb-4"><i class="fa-solid fa-star" data-zflex-bind="icon"></i></div></div><h3 class="feature-title mt-4" data-zflex-bind="title">Titre</h3><p class="feature-desc" data-zflex-bind="description">Description...</p></div></template><style>/* COMMON */
+  .feature-icon-placeholder {
+    font-size: 5rem;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 2rem;
+    background: var(--card-bg-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+  }
+
+  /* ZIGZAG STYLES */
+  .zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  .zigzag-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .zigzag-content {
+    flex: 1;
+  }
+  .zigzag-image {
+    flex: 1;
+  }
+  .zigzag-image img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+  }
+  .zigzag-content .feature-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  .zigzag-content .feature-desc {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+
+  /* CARDS STYLES */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .feature-card {
+    background: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  .feature-image-card img {
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  /* LIST STYLES */
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .border-b {
+    border-bottom-width: 1px;
+  }
+  .border-card-border {
+    border-color: var(--card-border-color);
+  }
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .gap-4 {
+    gap: 1rem;
+  }
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .zigzag-item,
+    .zigzag-item:nth-child(even) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    /* CARDS CAROUSEL ON MOBILE */
+    .features-cards .features-grid {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1.5rem;
+      gap: 1rem;
+      margin-right: -1.5rem; /* Break container padding */
+      padding-right: 1.5rem;
+    }
+    .features-cards .features-grid::-webkit-scrollbar {
+      display: none;
+    }
+    .features-cards .feature-card {
+      min-width: 85%;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
+  }</style></div><div data-zflex-section="finalCta" class="mb-24 last:mb-0"><div data-zflex-variant-container="finalCta"><section id="final-cta" class="final-cta-section style-split relative overflow-hidden" data-zflex-section="finalCta"><div class="absolute inset-0 z-0" data-zflex-id="finalCta.bgImage"><div class="absolute inset-0 bg-cover bg-center" style="background-image: url('http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-806ec11e-d333-4683-bc3e-4ac40430f6c4.jpeg?alt=media&amp;token=c3e6aea9-e7cf-4e85-9e2b-01ec4bafecb3');"></div><div class="absolute inset-0 bg-overlay"></div></div><div class="container relative z-10"><div class="cta-grid"><div class="cta-content reveal-on-scroll text-center md:text-left"><h2 class="section-title text-white mb-6 leading-tight" data-zflex-bind="title" data-zflex-id="finalCta.title">Prêt à commencer ?</h2><p class="section-subtitle text-white-muted text-lg mb-10 max-w-2xl mx-auto md:mx-0" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">L&#39;injection dans le dom qui est votre cerveau doit se faire instantanement...</p><div class="cta-actions flex flex-col md:flex-row gap-6"><a href="#buy" class="btn btn-primary btn-giant animate-pulse-glow" data-analytics-type="click_final_cta" data-analytics-payload="{&quot;label&quot;:&quot;Commander Maintenant&quot;,&quot;link&quot;:&quot;#buy&quot;}" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Commander Maintenant <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a><div class="trust-badge flex items-center text-white-muted text-sm" style="" data-zflex-show="finalCta.showGuarantee"><i class="fa-solid fa-shield-halved text-accent mr-2 text-lg"></i> <span data-zflex-bind="guaranteeText" data-zflex-id="finalCta.guaranteeText">Satisfait ou Remboursé avec un delai de 30 jours...</span></div></div><div class="payment-icons mt-8 opacity-70 grayscale hover:grayscale-0 transition-all" style="" data-zflex-show="finalCta.showPayments"><i class="fa-brands fa-cc-visa text-2xl mx-1"></i> <i class="fa-brands fa-cc-mastercard text-2xl mx-1"></i> <i class="fa-brands fa-cc-paypal text-2xl mx-1"></i></div></div><div class="cta-visual reveal-on-scroll hidden md:block" style="transition-delay: 0.2s"><img src="http://127.0.0.1:9199/v0/b/localhost/o/stores%2FSmN4M0Sp19kpj1PHk36r%2Fproducts%2Fsite-assets%2Fgallery-5276cf92-09fc-44bf-a9c6-758df1ea8911.jpeg?alt=media&amp;token=163b6a14-2202-4696-b546-0fdd58e4aa9c" alt="Final Offer" class="cta-product-shot" data-zflex-bind="productImage" data-zflex-id="finalCta.productImage"></div></div></div></section></div><template data-zflex-variant="finalCta.minimal"><section class="final-cta-section style-minimal relative overflow-hidden" data-zflex-section="finalCta"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-contrast-pattern"></div></div><div class="container relative z-10"><div class="cta-grid"><div class="cta-content text-center"><h2 class="section-title text-white mb-6" data-zflex-bind="title" data-zflex-id="finalCta.title">Titre</h2><p class="section-subtitle text-white-muted mb-10" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Sous-titre</p><div class="cta-actions flex flex-col items-center gap-6"><a href="#" class="btn btn-primary btn-giant" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Action</a></div></div></div></div></section></template><template data-zflex-variant="finalCta.split"><section class="final-cta-section style-split relative overflow-hidden" data-zflex-section="finalCta"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-contrast-pattern"></div></div><div class="container relative z-10"><div class="cta-grid"><div class="cta-content text-left"><h2 class="section-title text-white mb-6" data-zflex-bind="title" data-zflex-id="finalCta.title">Titre</h2><p class="section-subtitle text-white-muted mb-10" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Sous-titre</p><div class="cta-actions flex flex-row gap-6"><a href="#" class="btn btn-primary btn-giant" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Action</a></div></div><div class="cta-visual hidden md:block"><img src="" alt="Product" class="cta-product-shot" data-zflex-bind="productImage" data-zflex-id="finalCta.productImage"></div></div></div></section></template><template data-zflex-variant="finalCta.floating"><section class="final-cta-section style-floating relative overflow-hidden" data-zflex-section="finalCta"><div class="container relative z-10"><div class="cta-grid"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-contrast-pattern"></div></div><div class="cta-content text-center relative z-10"><h2 class="section-title text-white mb-6" data-zflex-bind="title" data-zflex-id="finalCta.title">Titre</h2><p class="section-subtitle text-white-muted mb-10" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Sous-titre</p><div class="cta-actions flex flex-col items-center gap-6"><a href="#" class="btn btn-primary btn-giant" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Action</a></div></div></div></div></section></template><style>/* --- VARIABLES --- */
+  .final-cta-section {
+    --cta-bg: #0f172a; /* Deep dark blue/black */
+    --cta-text: #ffffff;
+    --cta-padding: 6rem 0;
+    background-color: var(--cta-bg);
+    color: var(--cta-text);
+    padding: var(--cta-padding);
+  }
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darken bg image for text readability */
+  }
+  .text-white-muted {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* --- BUTTON UPGRADE --- */
+  .btn-giant {
+    font-size: 1.25rem;
+    padding: 1.25rem 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-giant:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(var(--primary-rgb), 0.6);
+  }
+
+  /* Better Pulse Animation (Glow based on primary color) */
+  @keyframes pulse-glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(var(--primary-rgb), 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0);
+    }
+  }
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  /* --- VARIANT 1: MINIMAL (Centered) --- */
+  .final-cta-section.style-minimal .cta-grid {
+    display: flex;
+    justify-content: center;
+  }
+  /* Already centered by default classes in HTML */
+
+  /* --- VARIANT 2: SPLIT (Text Left, Image Right) --- */
+  .final-cta-section.style-split .cta-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .cta-product-shot {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+    transform: rotate(3deg); /* Dynamic tilt */
+    transition: transform 0.5s;
+  }
+  .final-cta-section:hover .cta-product-shot {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  /* --- VARIANT 3: FLOATING (Card Style) --- */
+  .final-cta-section.style-floating {
+    background: var(--bg-color); /* Section is light */
+    padding: 4rem 0 6rem; /* Adjust spacing */
+  }
+  .final-cta-section.style-floating .cta-grid {
+    background: var(--cta-bg); /* Inner card is dark */
+    padding: 4rem;
+    border-radius: var(--border-radius-lg, 20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* Ensure the absolute bg image stays inside the rounded card */
+  .final-cta-section.style-floating .absolute.inset-0 {
+    border-radius: var(--border-radius-lg, 20px);
+  }
+  /* Center content logic for floating */
+  .final-cta-section.style-floating .cta-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* --- RESPONSIVE --- */
+  @media (max-width: 992px) {
+    .final-cta-section.style-split .cta-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .cta-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .btn-giant {
+      width: 100%; /* Full width button on mobile = Conversion */
+    }
+    .trust-badge {
+      justify-content: center;
+    }
+    .final-cta-section.style-floating .cta-grid {
+      padding: 2.5rem 1.5rem;
+    }
+  }</style></div></main>
