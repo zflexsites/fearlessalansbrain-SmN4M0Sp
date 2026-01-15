@@ -225,3 +225,8 @@ a:hover {
 #router-loader.hidden {
   display: none !important;
 }
+
+/* --- UNSPLASH CREDITS PROTECTION --- */
+#unsplash-credits-dialog.hidden {
+  display: none !important;
+}
